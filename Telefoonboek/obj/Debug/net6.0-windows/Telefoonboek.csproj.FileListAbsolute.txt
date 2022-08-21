@@ -1,0 +1,17 @@
+D:\Documents\Projects\TelefoonboekForms\Telefoonboek\Telefoonboek\bin\Debug\net6.0-windows\Telefoonboek.exe
+D:\Documents\Projects\TelefoonboekForms\Telefoonboek\Telefoonboek\bin\Debug\net6.0-windows\Telefoonboek.deps.json
+D:\Documents\Projects\TelefoonboekForms\Telefoonboek\Telefoonboek\bin\Debug\net6.0-windows\Telefoonboek.runtimeconfig.json
+D:\Documents\Projects\TelefoonboekForms\Telefoonboek\Telefoonboek\bin\Debug\net6.0-windows\Telefoonboek.dll
+D:\Documents\Projects\TelefoonboekForms\Telefoonboek\Telefoonboek\bin\Debug\net6.0-windows\ref\Telefoonboek.dll
+D:\Documents\Projects\TelefoonboekForms\Telefoonboek\Telefoonboek\bin\Debug\net6.0-windows\Telefoonboek.pdb
+D:\Documents\Projects\TelefoonboekForms\Telefoonboek\Telefoonboek\obj\Debug\net6.0-windows\Telefoonboek.csproj.AssemblyReference.cache
+D:\Documents\Projects\TelefoonboekForms\Telefoonboek\Telefoonboek\obj\Debug\net6.0-windows\Telefoonboek.Form1.resources
+D:\Documents\Projects\TelefoonboekForms\Telefoonboek\Telefoonboek\obj\Debug\net6.0-windows\Telefoonboek.csproj.GenerateResource.cache
+D:\Documents\Projects\TelefoonboekForms\Telefoonboek\Telefoonboek\obj\Debug\net6.0-windows\Telefoonboek.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\Projects\TelefoonboekForms\Telefoonboek\Telefoonboek\obj\Debug\net6.0-windows\Telefoonboek.AssemblyInfoInputs.cache
+D:\Documents\Projects\TelefoonboekForms\Telefoonboek\Telefoonboek\obj\Debug\net6.0-windows\Telefoonboek.AssemblyInfo.cs
+D:\Documents\Projects\TelefoonboekForms\Telefoonboek\Telefoonboek\obj\Debug\net6.0-windows\Telefoonboek.csproj.CoreCompileInputs.cache
+D:\Documents\Projects\TelefoonboekForms\Telefoonboek\Telefoonboek\obj\Debug\net6.0-windows\Telefoonboek.dll
+D:\Documents\Projects\TelefoonboekForms\Telefoonboek\Telefoonboek\obj\Debug\net6.0-windows\ref\Telefoonboek.dll
+D:\Documents\Projects\TelefoonboekForms\Telefoonboek\Telefoonboek\obj\Debug\net6.0-windows\Telefoonboek.pdb
+D:\Documents\Projects\TelefoonboekForms\Telefoonboek\Telefoonboek\obj\Debug\net6.0-windows\Telefoonboek.genruntimeconfig.cache

@@ -6,5 +6,12 @@ namespace Telefoonboek
         {
             InitializeComponent();
         }
+
+        private void ShowNames_Click(object sender, EventArgs e)
+        {
+            String[] names = { "Frits", "Joost", "Karin" };
+            foreach (String name in names)
+                listBoxNames.Items.Add("Student: " + name);
+        }
     }
 }
