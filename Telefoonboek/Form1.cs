@@ -9,9 +9,16 @@ namespace Telefoonboek
 
         private void ShowNames_Click(object sender, EventArgs e)
         {
-            String[] names = { "Frits", "Joost", "Karin" };
+            string[] names = { "Frits", "Joost", "Karin" };
             foreach (String name in names)
                 listBoxNames.Items.Add("Student: " + name);
         }
+
+        private void AddName_Click(object sender, EventArgs e)
+        {
+            string newName = textBoxAddName.Text;
+            listBoxNames.Items.Add("Student: " + newName);
+        }
+
     }
 }

@@ -30,6 +30,8 @@
         {
             this.showNames = new System.Windows.Forms.Button();
             this.listBoxNames = new System.Windows.Forms.ListBox();
+            this.textBoxAddName = new System.Windows.Forms.TextBox();
+            this.addName = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // showNames
@@ -51,16 +53,36 @@
             this.listBoxNames.Size = new System.Drawing.Size(120, 94);
             this.listBoxNames.TabIndex = 1;
             // 
+            // textBoxAddName
+            // 
+            this.textBoxAddName.Location = new System.Drawing.Point(155, 18);
+            this.textBoxAddName.Name = "textBoxAddName";
+            this.textBoxAddName.Size = new System.Drawing.Size(109, 23);
+            this.textBoxAddName.TabIndex = 2;
+            // 
+            // addName
+            // 
+            this.addName.Location = new System.Drawing.Point(270, 17);
+            this.addName.Name = "addName";
+            this.addName.Size = new System.Drawing.Size(75, 23);
+            this.addName.TabIndex = 3;
+            this.addName.Text = "Add";
+            this.addName.UseVisualStyleBackColor = true;
+            this.addName.Click += new System.EventHandler(this.AddName_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.addName);
+            this.Controls.Add(this.textBoxAddName);
             this.Controls.Add(this.listBoxNames);
             this.Controls.Add(this.showNames);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -68,5 +90,7 @@
 
         private Button showNames;
         private ListBox listBoxNames;
+        private TextBox textBoxAddName;
+        private Button addName;
     }
 }
