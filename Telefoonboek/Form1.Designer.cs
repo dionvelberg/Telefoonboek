@@ -32,6 +32,7 @@
             this.listBoxNames = new System.Windows.Forms.ListBox();
             this.textBoxAddName = new System.Windows.Forms.TextBox();
             this.addName = new System.Windows.Forms.Button();
+            this.sortNames = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // showNames
@@ -48,9 +49,9 @@
             // 
             this.listBoxNames.FormattingEnabled = true;
             this.listBoxNames.ItemHeight = 15;
-            this.listBoxNames.Location = new System.Drawing.Point(12, 50);
+            this.listBoxNames.Location = new System.Drawing.Point(12, 79);
             this.listBoxNames.Name = "listBoxNames";
-            this.listBoxNames.Size = new System.Drawing.Size(120, 94);
+            this.listBoxNames.Size = new System.Drawing.Size(252, 109);
             this.listBoxNames.TabIndex = 1;
             // 
             // textBoxAddName
@@ -70,11 +71,22 @@
             this.addName.UseVisualStyleBackColor = true;
             this.addName.Click += new System.EventHandler(this.AddName_Click);
             // 
+            // sortNames
+            // 
+            this.sortNames.Location = new System.Drawing.Point(12, 50);
+            this.sortNames.Name = "sortNames";
+            this.sortNames.Size = new System.Drawing.Size(75, 23);
+            this.sortNames.TabIndex = 4;
+            this.sortNames.Text = "Sort";
+            this.sortNames.UseVisualStyleBackColor = true;
+            this.sortNames.Click += new System.EventHandler(this.SortNames_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.sortNames);
             this.Controls.Add(this.addName);
             this.Controls.Add(this.textBoxAddName);
             this.Controls.Add(this.listBoxNames);
@@ -92,5 +104,6 @@
         private ListBox listBoxNames;
         private TextBox textBoxAddName;
         private Button addName;
+        private Button sortNames;
     }
 }
