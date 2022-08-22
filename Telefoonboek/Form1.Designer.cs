@@ -33,6 +33,8 @@
             this.textBoxAddName = new System.Windows.Forms.TextBox();
             this.addName = new System.Windows.Forms.Button();
             this.sortNames = new System.Windows.Forms.Button();
+            this.textBoxSearch = new System.Windows.Forms.TextBox();
+            this.searchNames = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // showNames
@@ -49,9 +51,9 @@
             // 
             this.listBoxNames.FormattingEnabled = true;
             this.listBoxNames.ItemHeight = 15;
-            this.listBoxNames.Location = new System.Drawing.Point(12, 79);
+            this.listBoxNames.Location = new System.Drawing.Point(12, 116);
             this.listBoxNames.Name = "listBoxNames";
-            this.listBoxNames.Size = new System.Drawing.Size(252, 109);
+            this.listBoxNames.Size = new System.Drawing.Size(333, 109);
             this.listBoxNames.TabIndex = 1;
             // 
             // textBoxAddName
@@ -75,17 +77,37 @@
             // 
             this.sortNames.Location = new System.Drawing.Point(12, 50);
             this.sortNames.Name = "sortNames";
-            this.sortNames.Size = new System.Drawing.Size(75, 23);
+            this.sortNames.Size = new System.Drawing.Size(99, 23);
             this.sortNames.TabIndex = 4;
             this.sortNames.Text = "Sort";
             this.sortNames.UseVisualStyleBackColor = true;
             this.sortNames.Click += new System.EventHandler(this.SortNames_Click);
+            // 
+            // textBoxSearch
+            // 
+            this.textBoxSearch.Location = new System.Drawing.Point(12, 79);
+            this.textBoxSearch.Name = "textBoxSearch";
+            this.textBoxSearch.Size = new System.Drawing.Size(252, 23);
+            this.textBoxSearch.TabIndex = 5;
+            this.textBoxSearch.TextChanged += new System.EventHandler(this.TextBoxSearch_TextChanged);
+            // 
+            // searchNames
+            // 
+            this.searchNames.Location = new System.Drawing.Point(270, 79);
+            this.searchNames.Name = "searchNames";
+            this.searchNames.Size = new System.Drawing.Size(75, 23);
+            this.searchNames.TabIndex = 6;
+            this.searchNames.Text = "Search";
+            this.searchNames.UseVisualStyleBackColor = true;
+            this.searchNames.Click += new System.EventHandler(this.SearchNames_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.searchNames);
+            this.Controls.Add(this.textBoxSearch);
             this.Controls.Add(this.sortNames);
             this.Controls.Add(this.addName);
             this.Controls.Add(this.textBoxAddName);
@@ -105,5 +127,7 @@
         private TextBox textBoxAddName;
         private Button addName;
         private Button sortNames;
+        private TextBox textBoxSearch;
+        private Button searchNames;
     }
 }

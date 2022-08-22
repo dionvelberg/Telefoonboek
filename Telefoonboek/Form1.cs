@@ -4,6 +4,7 @@ namespace Telefoonboek
 {
     public partial class Form1 : Form
     {
+        private List<string> namesList = new List<string> { "Frits", "Joost", "Karin" };// Declare names & initialize names with default values
         public Form1()
         {
             InitializeComponent();
@@ -11,34 +12,66 @@ namespace Telefoonboek
 
         private void ShowNames_Click(object sender, EventArgs e)// Show button click event
         {
-            string[] names = { "Frits", "Joost", "Karin" };// Declare names & initialize names with default values
-            foreach (String name in names)// Add each name to the listbox
-                listBoxNames.Items.Add("Student: " + name);
+            SetListBoxNames();// Set current listbox values
         }
 
         private void AddName_Click(object sender, EventArgs e)// Add button click event
         {
-            string newName = textBoxAddName.Text;// Get textbox input
-            if (newName.Length > 0)// Check if not empty
+            string newName = textBoxAddName.Text;// Get textboxAddName input
+            if (!String.IsNullOrWhiteSpace(newName))// Check if there's a value
             {
-                listBoxNames.Items.Add("Student: " + newName);// Add input to listbox
-                textBoxAddName.Text = "";// Reset textbox
+                namesList.Add(newName);// Add input to namesList
+                SetListBoxNames();
+                textBoxAddName.Clear();// Reset textbox
             }
         }
 
         private void SortNames_Click(object sender, EventArgs e)// Sort button click event
         {
-            ArrayList sortedList = new ArrayList();// Declare & initialize sortedList
-            foreach (Object o in listBoxNames.Items) {// Add values from current list of names to new list
-                sortedList.Add(o);
+            List<string> sortedList = new List<string>();// Declare & initialize sortedList
+            foreach (string currentItem in namesList)
+            {// Add values from current list of names to new list
+                sortedList.Add(currentItem);
             }
             sortedList.Sort();// Sort new list
 
-            listBoxNames.Items.Clear();// Clear current list of names
-            foreach (Object o in sortedList) {// Add sorted values to list of names
-                listBoxNames.Items.Add(o);
+            namesList.Clear();// Clear current list of names
+            foreach (string sortedItem in sortedList)
+            {// Add sorted values to list of names
+                namesList.Add(sortedItem);
             }
-            
+            SetListBoxNames();
+
+
+        }
+
+        private void SearchNames_Click(object sender, EventArgs e)// Search button click event
+        {
+            string searchInput = textBoxSearch.Text;// Get textBoxSearch input
+            List<string> tempNamesList = namesList;// tempNamesList to display results only
+            if (!String.IsNullOrWhiteSpace(searchInput))// Check if there's a value
+            {
+                listBoxNames.Items.Clear();// Reset Listbox values
+                foreach (String name in tempNamesList) 
+                { // Transfer tempNamesList to the Listbox
+                    if(name.Contains(searchInput))
+                        listBoxNames.Items.Add("Student: " + name);
+                }
+            }
+        }
+
+        private void SetListBoxNames()// Set Listbox values
+        {
+            listBoxNames.Items.Clear();// Reset Listbox
+            foreach (String name in namesList)// Transfer namesList to the Listbox
+                listBoxNames.Items.Add("Student: " + name);
+        }
+
+        private void TextBoxSearch_TextChanged(object sender, EventArgs e)// textBoxSearch onChange event
+        {
+            if (String.IsNullOrWhiteSpace(textBoxSearch.Text)) {// textBoxSearch is null, empty or consists of whitespaces
+                SetListBoxNames();
+            }
         }
     }
 }
