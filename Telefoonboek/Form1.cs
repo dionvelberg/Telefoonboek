@@ -10,12 +10,12 @@ namespace Telefoonboek
             InitializeComponent();
         }
 
-        private void ShowNames_Click(object sender, EventArgs e)// Show button click event
+        private void ShowNamesBtn_Click(object sender, EventArgs e)// Show button click event
         {
             SetListBoxNames();// Set current listbox values
         }
 
-        private void AddName_Click(object sender, EventArgs e)// Add button click event
+        private void AddNameBtn_Click(object sender, EventArgs e)// Add button click event
         {
             string newName = textBoxAddName.Text;// Get textboxAddName input
             if (!String.IsNullOrWhiteSpace(newName))// Check if there's a value
@@ -26,7 +26,7 @@ namespace Telefoonboek
             }
         }
 
-        private void SortNames_Click(object sender, EventArgs e)// Sort button click event
+        private void SortNamesBtn_Click(object sender, EventArgs e)// Sort button click event
         {
             List<string> sortedList = new List<string>();// Declare & initialize sortedList
             foreach (string currentItem in namesList)
@@ -45,16 +45,31 @@ namespace Telefoonboek
 
         }
 
-        private void SearchNames_Click(object sender, EventArgs e)// Search button click event
+        private void SearchNamesBtn_Click(object sender, EventArgs e)// Search button click event
         {
-            string searchInput = textBoxSearch.Text;// Get textBoxSearch input
+            SearchNames();
+        }
+        private void TextBoxSearch_TextChanged(object sender, EventArgs e)// textBoxSearch onChange event
+        {
+            if (String.IsNullOrWhiteSpace(textBoxSearch.Text))
+            {// textBoxSearch is null, empty or consists of whitespaces
+                SetListBoxNames();
+            }
+            else
+            {
+                SearchNames();
+            }
+        }
+
+        private void SearchNames() {// Search Names
+            string searchInput = textBoxSearch.Text.ToLower();// Get textBoxSearch input
             List<string> tempNamesList = namesList;// tempNamesList to display results only
             if (!String.IsNullOrWhiteSpace(searchInput))// Check if there's a value
             {
                 listBoxNames.Items.Clear();// Reset Listbox values
-                foreach (String name in tempNamesList) 
+                foreach (String name in tempNamesList)
                 { // Transfer tempNamesList to the Listbox
-                    if(name.Contains(searchInput))
+                    if (name.ToLower().Contains(searchInput))
                         listBoxNames.Items.Add("Student: " + name);
                 }
             }
@@ -67,11 +82,6 @@ namespace Telefoonboek
                 listBoxNames.Items.Add("Student: " + name);
         }
 
-        private void TextBoxSearch_TextChanged(object sender, EventArgs e)// textBoxSearch onChange event
-        {
-            if (String.IsNullOrWhiteSpace(textBoxSearch.Text)) {// textBoxSearch is null, empty or consists of whitespaces
-                SetListBoxNames();
-            }
-        }
+
     }
 }

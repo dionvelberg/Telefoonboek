@@ -28,91 +28,95 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.showNames = new System.Windows.Forms.Button();
+            this.showNamesBtn = new System.Windows.Forms.Button();
             this.listBoxNames = new System.Windows.Forms.ListBox();
             this.textBoxAddName = new System.Windows.Forms.TextBox();
-            this.addName = new System.Windows.Forms.Button();
-            this.sortNames = new System.Windows.Forms.Button();
+            this.addNameBtn = new System.Windows.Forms.Button();
+            this.sortNamesBtn = new System.Windows.Forms.Button();
             this.textBoxSearch = new System.Windows.Forms.TextBox();
-            this.searchNames = new System.Windows.Forms.Button();
+            this.searchNamesBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // showNames
+            // showNamesBtn
             // 
-            this.showNames.Location = new System.Drawing.Point(12, 12);
-            this.showNames.Name = "showNames";
-            this.showNames.Size = new System.Drawing.Size(99, 32);
-            this.showNames.TabIndex = 0;
-            this.showNames.Text = "Show names";
-            this.showNames.UseVisualStyleBackColor = true;
-            this.showNames.Click += new System.EventHandler(this.ShowNames_Click);
+            this.showNamesBtn.Location = new System.Drawing.Point(107, 77);
+            this.showNamesBtn.Name = "showNamesBtn";
+            this.showNamesBtn.Size = new System.Drawing.Size(99, 32);
+            this.showNamesBtn.TabIndex = 0;
+            this.showNamesBtn.Text = "Show names";
+            this.showNamesBtn.UseVisualStyleBackColor = true;
+            this.showNamesBtn.Click += new System.EventHandler(this.ShowNamesBtn_Click);
             // 
             // listBoxNames
             // 
+            this.listBoxNames.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.listBoxNames.FormattingEnabled = true;
-            this.listBoxNames.ItemHeight = 15;
+            this.listBoxNames.ItemHeight = 25;
             this.listBoxNames.Location = new System.Drawing.Point(12, 116);
             this.listBoxNames.Name = "listBoxNames";
-            this.listBoxNames.Size = new System.Drawing.Size(333, 109);
+            this.listBoxNames.Size = new System.Drawing.Size(776, 279);
             this.listBoxNames.TabIndex = 1;
             // 
             // textBoxAddName
             // 
-            this.textBoxAddName.Location = new System.Drawing.Point(155, 18);
+            this.textBoxAddName.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxAddName.Location = new System.Drawing.Point(12, 24);
             this.textBoxAddName.Name = "textBoxAddName";
-            this.textBoxAddName.Size = new System.Drawing.Size(109, 23);
+            this.textBoxAddName.Size = new System.Drawing.Size(252, 33);
             this.textBoxAddName.TabIndex = 2;
             // 
-            // addName
+            // addNameBtn
             // 
-            this.addName.Location = new System.Drawing.Point(270, 17);
-            this.addName.Name = "addName";
-            this.addName.Size = new System.Drawing.Size(75, 23);
-            this.addName.TabIndex = 3;
-            this.addName.Text = "Add";
-            this.addName.UseVisualStyleBackColor = true;
-            this.addName.Click += new System.EventHandler(this.AddName_Click);
+            this.addNameBtn.Location = new System.Drawing.Point(270, 24);
+            this.addNameBtn.Name = "addNameBtn";
+            this.addNameBtn.Size = new System.Drawing.Size(89, 33);
+            this.addNameBtn.TabIndex = 3;
+            this.addNameBtn.Text = "Add";
+            this.addNameBtn.UseVisualStyleBackColor = true;
+            this.addNameBtn.Click += new System.EventHandler(this.AddNameBtn_Click);
             // 
-            // sortNames
+            // sortNamesBtn
             // 
-            this.sortNames.Location = new System.Drawing.Point(12, 50);
-            this.sortNames.Name = "sortNames";
-            this.sortNames.Size = new System.Drawing.Size(99, 23);
-            this.sortNames.TabIndex = 4;
-            this.sortNames.Text = "Sort";
-            this.sortNames.UseVisualStyleBackColor = true;
-            this.sortNames.Click += new System.EventHandler(this.SortNames_Click);
+            this.sortNamesBtn.Location = new System.Drawing.Point(12, 77);
+            this.sortNamesBtn.Name = "sortNamesBtn";
+            this.sortNamesBtn.Size = new System.Drawing.Size(89, 33);
+            this.sortNamesBtn.TabIndex = 4;
+            this.sortNamesBtn.Text = "Sort";
+            this.sortNamesBtn.UseVisualStyleBackColor = true;
+            this.sortNamesBtn.Click += new System.EventHandler(this.SortNamesBtn_Click);
             // 
             // textBoxSearch
             // 
-            this.textBoxSearch.Location = new System.Drawing.Point(12, 79);
+            this.textBoxSearch.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxSearch.Location = new System.Drawing.Point(270, 77);
             this.textBoxSearch.Name = "textBoxSearch";
-            this.textBoxSearch.Size = new System.Drawing.Size(252, 23);
+            this.textBoxSearch.PlaceholderText = "Search...";
+            this.textBoxSearch.Size = new System.Drawing.Size(423, 33);
             this.textBoxSearch.TabIndex = 5;
             this.textBoxSearch.TextChanged += new System.EventHandler(this.TextBoxSearch_TextChanged);
             // 
-            // searchNames
+            // searchNamesBtn
             // 
-            this.searchNames.Location = new System.Drawing.Point(270, 79);
-            this.searchNames.Name = "searchNames";
-            this.searchNames.Size = new System.Drawing.Size(75, 23);
-            this.searchNames.TabIndex = 6;
-            this.searchNames.Text = "Search";
-            this.searchNames.UseVisualStyleBackColor = true;
-            this.searchNames.Click += new System.EventHandler(this.SearchNames_Click);
+            this.searchNamesBtn.Location = new System.Drawing.Point(699, 77);
+            this.searchNamesBtn.Name = "searchNamesBtn";
+            this.searchNamesBtn.Size = new System.Drawing.Size(89, 33);
+            this.searchNamesBtn.TabIndex = 6;
+            this.searchNamesBtn.Text = "Search";
+            this.searchNamesBtn.UseVisualStyleBackColor = true;
+            this.searchNamesBtn.Click += new System.EventHandler(this.SearchNamesBtn_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.searchNames);
+            this.Controls.Add(this.searchNamesBtn);
             this.Controls.Add(this.textBoxSearch);
-            this.Controls.Add(this.sortNames);
-            this.Controls.Add(this.addName);
+            this.Controls.Add(this.sortNamesBtn);
+            this.Controls.Add(this.addNameBtn);
             this.Controls.Add(this.textBoxAddName);
             this.Controls.Add(this.listBoxNames);
-            this.Controls.Add(this.showNames);
+            this.Controls.Add(this.showNamesBtn);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -122,12 +126,12 @@
 
         #endregion
 
-        private Button showNames;
+        private Button showNamesBtn;
         private ListBox listBoxNames;
         private TextBox textBoxAddName;
-        private Button addName;
-        private Button sortNames;
+        private Button addNameBtn;
+        private Button sortNamesBtn;
         private TextBox textBoxSearch;
-        private Button searchNames;
+        private Button searchNamesBtn;
     }
 }
