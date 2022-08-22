@@ -4,10 +4,13 @@ namespace Telefoonboek
 {
     public partial class Form1 : Form
     {
-        private List<string> namesList = new List<string> { "Frits", "Joost", "Karin" };// Declare names & initialize names with default values
+        private List<Persoon> Personen = new List<Persoon>();// Declare names & initialize names with default values
         public Form1()
         {
             InitializeComponent();
+            Personen.Add(new Persoon() { FirstName="Frits"});
+            Personen.Add(new Persoon() { FirstName = "Joost" });
+            Personen.Add(new Persoon() { FirstName = "Karin" });
         }
 
         private void ShowNamesBtn_Click(object sender, EventArgs e)// Show button click event
@@ -20,7 +23,7 @@ namespace Telefoonboek
             string newName = textBoxAddName.Text;// Get textboxAddName input
             if (!String.IsNullOrWhiteSpace(newName))// Check if there's a value
             {
-                namesList.Add(newName);// Add input to namesList
+                Personen.Add(new Persoon() { FirstName=newName});// Add input to namesList
                 SetListBoxNames();
                 textBoxAddName.Clear();// Reset textbox
             }
@@ -28,17 +31,18 @@ namespace Telefoonboek
 
         private void SortNamesBtn_Click(object sender, EventArgs e)// Sort button click event
         {
-            List<string> sortedList = new List<string>();// Declare & initialize sortedList
-            foreach (string currentItem in namesList)
+            List<Persoon> sortedList = new List<Persoon>();// Declare & initialize sortedList
+            foreach (Persoon currentItem in Personen)
             {// Add values from current list of names to new list
-                sortedList.Add(currentItem);
+                sortedList.Add(currentItem
+                    );
             }
-            sortedList.Sort();// Sort new list
+            sortedList = sortedList.OrderBy(o => o.FirstName).ToList();// Sort new list
 
-            namesList.Clear();// Clear current list of names
-            foreach (string sortedItem in sortedList)
+            Personen.Clear();// Clear current list of names
+            foreach (Persoon sortedItem in sortedList)
             {// Add sorted values to list of names
-                namesList.Add(sortedItem);
+                Personen.Add(sortedItem);
             }
             SetListBoxNames();
 
@@ -63,14 +67,19 @@ namespace Telefoonboek
 
         private void SearchNames() {// Search Names
             string searchInput = textBoxSearch.Text.ToLower();// Get textBoxSearch input
-            List<string> tempNamesList = namesList;// tempNamesList to display results only
+            List<Persoon> tempNamesList = Personen;// tempNamesList to display results only
             if (!String.IsNullOrWhiteSpace(searchInput))// Check if there's a value
             {
                 listBoxNames.Items.Clear();// Reset Listbox values
-                foreach (String name in tempNamesList)
+                foreach (Persoon name in tempNamesList)
                 { // Transfer tempNamesList to the Listbox
-                    if (name.ToLower().Contains(searchInput))
-                        listBoxNames.Items.Add("Student: " + name);
+                    if (name.FirstName.ToLower().Contains(searchInput))
+                        listBoxNames.Items.Add("First name: " + name.FirstName +
+                    ", Last name: " + name.LastName +
+                    ", Age: " + name.Age +
+                    ", Phone number: " + name.PhoneNumber +
+                    ", Email: " + name.Email
+                    );
                 }
             }
         }
@@ -78,10 +87,14 @@ namespace Telefoonboek
         private void SetListBoxNames()// Set Listbox values
         {
             listBoxNames.Items.Clear();// Reset Listbox
-            foreach (String name in namesList)// Transfer namesList to the Listbox
-                listBoxNames.Items.Add("Student: " + name);
+            foreach (Persoon name in Personen)// Transfer namesList to the Listbox
+                listBoxNames.Items.Add("First name: " + name.FirstName + 
+                    ", Last name: " + name.LastName + 
+                    ", Age: " + name.Age + 
+                    ", Phone number: " + name.PhoneNumber +
+                    ", Email: " + name.Email
+                    );
         }
-
 
     }
 }
