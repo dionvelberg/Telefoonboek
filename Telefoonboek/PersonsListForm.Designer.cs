@@ -39,15 +39,16 @@
             this.columnHeaderAge = new System.Windows.Forms.ColumnHeader();
             this.columnHeaderPhoneNumber = new System.Windows.Forms.ColumnHeader();
             this.columnHeaderEmail = new System.Windows.Forms.ColumnHeader();
+            this.buttonSaveAll = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // showNamesBtn
             // 
-            this.showNamesBtn.Location = new System.Drawing.Point(107, 77);
+            this.showNamesBtn.Location = new System.Drawing.Point(117, 406);
             this.showNamesBtn.Name = "showNamesBtn";
             this.showNamesBtn.Size = new System.Drawing.Size(99, 32);
             this.showNamesBtn.TabIndex = 0;
-            this.showNamesBtn.Text = "Toon lijst";
+            this.showNamesBtn.Text = "Laad lijst";
             this.showNamesBtn.UseVisualStyleBackColor = true;
             this.showNamesBtn.Click += new System.EventHandler(this.ShowNamesBtn_Click);
             // 
@@ -135,11 +136,22 @@
             this.columnHeaderEmail.Text = "Email";
             this.columnHeaderEmail.Width = 154;
             // 
+            // buttonSaveAll
+            // 
+            this.buttonSaveAll.Location = new System.Drawing.Point(12, 406);
+            this.buttonSaveAll.Name = "buttonSaveAll";
+            this.buttonSaveAll.Size = new System.Drawing.Size(99, 32);
+            this.buttonSaveAll.TabIndex = 8;
+            this.buttonSaveAll.Text = "Bewaar alles";
+            this.buttonSaveAll.UseVisualStyleBackColor = true;
+            this.buttonSaveAll.Click += new System.EventHandler(this.buttonSaveAll_Click);
+            // 
             // PersonsListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonSaveAll);
             this.Controls.Add(this.listViewNames);
             this.Controls.Add(this.searchNamesBtn);
             this.Controls.Add(this.textBoxSearch);
@@ -167,5 +179,6 @@
         private ColumnHeader columnHeaderAge;
         private ColumnHeader columnHeaderPhoneNumber;
         private ColumnHeader columnHeaderEmail;
+        private Button buttonSaveAll;
     }
 }

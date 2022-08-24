@@ -17,14 +17,45 @@ namespace Telefoonboek
 
         private void PersonsListForm_Load(object sender, EventArgs e)
         {
-            Personen.Add(new Person() { FirstName = "Frits" });
-            Personen.Add(new Person() { FirstName = "Joost" });
-            Personen.Add(new Person() { FirstName = "Karin" });
         }
 
         private void ShowNamesBtn_Click(object sender, EventArgs e)// Show button click event
         {
-            SetListBoxNames();// Set current listbox values
+            string line;
+            StreamReader file = new StreamReader("../../../SavedList.txt");
+            while ((line = file.ReadLine()) != null)
+            {
+                bool isSavedPersonInList = false;
+                string[] personData = line.Split(',');
+                Person savedPerson = new Person();// Get values of current person
+                savedPerson.FirstName = personData[0];
+                savedPerson.LastName = personData[1];
+                savedPerson.Age = personData[2];
+                savedPerson.PhoneNumber = personData[3];
+                savedPerson.Email = personData[4];
+                foreach (Person item in Personen)
+                {
+                    //Check if it doesn't already exist in 'Listview'
+                    string itemToLine = String.Format("{0},{1},{2},{3},{4}", item.FirstName, item.LastName, item.Age, item.PhoneNumber, item.Email);
+                    if (itemToLine == line)
+                        isSavedPersonInList = true;
+                }
+                if(!isSavedPersonInList)
+                    Personen.Add(savedPerson);
+            }
+            file.Close();
+            SetListBoxNames();// Set current listbox values  
+        }
+
+        private void buttonSaveAll_Click(object sender, EventArgs e)
+        {
+            StreamWriter saveAll = new StreamWriter("../../../SavedList.txt");
+
+            foreach (Person item in Personen)
+            {
+                saveAll.WriteLine(String.Format("{0},{1},{2},{3},{4}", item.FirstName, item.LastName, item.Age, item.PhoneNumber, item.Email));
+            }
+            saveAll.Close();
         }
 
         private void AddPersonBtn_Click(object sender, EventArgs e)// AddPerson button click event
@@ -177,5 +208,6 @@ namespace Telefoonboek
         {
             this.Cursor = Cursors.Default;
         }
+
     }
 }
