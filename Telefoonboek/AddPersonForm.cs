@@ -12,11 +12,13 @@ namespace Telefoonboek
 {
     public partial class AddPersonForm : Form
     {
-        private PersonsListForm personsList;
+        private PersonsListForm personsListForm;
+
         public AddPersonForm(PersonsListForm formNamesList)
         {
+            
             InitializeComponent();
-            personsList = formNamesList;
+            personsListForm = formNamesList;
         }
 
         private void AddPersonForm_Load(object sender, EventArgs e)
@@ -36,15 +38,43 @@ namespace Telefoonboek
         private void buttonAddPerson_Click(object sender, EventArgs e)
         {
             Person newPerson = new Person();// Set values for new Person
+            PersonAddress newPersonAddress = new PersonAddress();
             newPerson.FirstName = textBoxFirstName.Text;
             newPerson.LastName = textBoxLastName.Text;
             newPerson.Age = textBoxAge.Text;
             newPerson.PhoneNumber = textBoxPhoneNumber.Text;
             newPerson.Email = textBoxEmail.Text;
+
+            newPersonAddress.zip_code = textBoxZipcode.Text;
+            newPersonAddress.house_number = textBoxNumber.Text;
+            newPersonAddress.street = textBoxStreet.Text;
+            newPersonAddress.city = textBoxCity.Text;
+            newPersonAddress.longitude = textBoxLongitude.Text;
+            newPersonAddress.latitude = textBoxLatitude.Text;
+            newPersonAddress.province = textBoxProvince.Text;
+            newPerson.Address = newPersonAddress;
             
-            personsList.AddNewPerson(newPerson);// Create new Person
+            personsListForm.AddNewPerson(newPerson);// Create new Person
 
 
+        }
+
+        private async void TextBoxGetAddres_TextChanged(object sender, EventArgs e)// textBoxPostcode or textBoxNumber onChange event
+        {
+            if ( !String.IsNullOrWhiteSpace(textBoxZipcode.Text) && !String.IsNullOrWhiteSpace(textBoxNumber.Text) )
+            {
+                string number = textBoxNumber.Text;// Get house number
+                string zipcode = textBoxZipcode.Text;// Get zipcode
+                PersonAddress result = await personsListForm.getPersonAddressClient.GetPersonAddress(zipcode, number);//Get Request person address
+
+                //Set Address values
+                textBoxStreet.Text = result?.street ?? "";
+                textBoxCity.Text = result?.city ?? "";
+                textBoxProvince.Text = result?.province ?? "";
+                textBoxLongitude.Text = result?.longitude ?? "";
+                textBoxLatitude.Text = result?.latitude ?? "";
+            }
+                
         }
     }
 }

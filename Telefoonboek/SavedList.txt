@@ -1,4 +1,3 @@
-Frits,de Jong,35,06123456789,test@mail.com
-Joost,de Vries,40,06123456789,test@mail.com
-Karin,Slager,25,06123456789,test@mail.com
-test,test,test,est,test
+TestVoornaam1,TestAchternaam1,25,06123456789,test@mail.com,Looxmagracht,Sneek,1,8603AB,5.6604847,53.0342546,Friesland
+TestVoornaam2,TestAchternaam2,25,06123456789,test@mail.com,Looxmagracht,Sneek,2,8603AB,5.6605744,53.0342814,Friesland
+TestVoornaam3,TestAchternaam3,25,06123456789,test@mail.com,Looxmagracht,Sneek,3,8603AB,5.6606639,53.0342992,Friesland

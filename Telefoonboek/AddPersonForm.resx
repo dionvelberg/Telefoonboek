@@ -62,7 +62,7 @@
     <value>Segoe UI, 12pt</value>
   </data>
   <data name="textBoxFirstName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>168, 37</value>
+    <value>12, 33</value>
   </data>
   <data name="textBoxFirstName.Size" type="System.Drawing.Size, System.Drawing">
     <value>250, 29</value>
@@ -81,13 +81,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBoxFirstName.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>20</value>
   </data>
   <data name="textBoxLastName.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
   </data>
   <data name="textBoxLastName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>168, 97</value>
+    <value>12, 89</value>
   </data>
   <data name="textBoxLastName.Size" type="System.Drawing.Size, System.Drawing">
     <value>250, 29</value>
@@ -105,13 +105,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBoxLastName.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>19</value>
   </data>
   <data name="textBoxAge.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
   </data>
   <data name="textBoxAge.Location" type="System.Drawing.Point, System.Drawing">
-    <value>168, 157</value>
+    <value>12, 145</value>
   </data>
   <data name="textBoxAge.Size" type="System.Drawing.Size, System.Drawing">
     <value>250, 29</value>
@@ -129,13 +129,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBoxAge.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>18</value>
   </data>
   <data name="textBoxPhoneNumber.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
   </data>
   <data name="textBoxPhoneNumber.Location" type="System.Drawing.Point, System.Drawing">
-    <value>168, 217</value>
+    <value>12, 201</value>
   </data>
   <data name="textBoxPhoneNumber.Size" type="System.Drawing.Size, System.Drawing">
     <value>250, 29</value>
@@ -153,13 +153,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBoxPhoneNumber.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>17</value>
   </data>
   <data name="textBoxEmail.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
   </data>
   <data name="textBoxEmail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>168, 277</value>
+    <value>12, 257</value>
   </data>
   <data name="textBoxEmail.Size" type="System.Drawing.Size, System.Drawing">
     <value>250, 29</value>
@@ -177,7 +177,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBoxEmail.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>16</value>
   </data>
   <data name="labelFirstName.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -186,7 +186,7 @@
     <value>Segoe UI, 12pt, style=Bold</value>
   </data>
   <data name="labelFirstName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 40</value>
+    <value>12, 9</value>
   </data>
   <data name="labelFirstName.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 21</value>
@@ -207,7 +207,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;labelFirstName.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>15</value>
   </data>
   <data name="labelLastName.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -216,7 +216,7 @@
     <value>Segoe UI, 12pt, style=Bold</value>
   </data>
   <data name="labelLastName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 100</value>
+    <value>12, 65</value>
   </data>
   <data name="labelLastName.Size" type="System.Drawing.Size, System.Drawing">
     <value>111, 21</value>
@@ -237,7 +237,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;labelLastName.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>14</value>
   </data>
   <data name="labelAge.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -246,7 +246,7 @@
     <value>Segoe UI, 12pt, style=Bold</value>
   </data>
   <data name="labelAge.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 160</value>
+    <value>12, 121</value>
   </data>
   <data name="labelAge.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 21</value>
@@ -267,7 +267,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;labelAge.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>13</value>
   </data>
   <data name="labelPhoneNumber.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -276,7 +276,7 @@
     <value>Segoe UI, 12pt, style=Bold</value>
   </data>
   <data name="labelPhoneNumber.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 220</value>
+    <value>12, 177</value>
   </data>
   <data name="labelPhoneNumber.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 21</value>
@@ -297,7 +297,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;labelPhoneNumber.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>12</value>
   </data>
   <data name="labelEmail.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -306,7 +306,7 @@
     <value>Segoe UI, 12pt, style=Bold</value>
   </data>
   <data name="labelEmail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 280</value>
+    <value>12, 233</value>
   </data>
   <data name="labelEmail.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 21</value>
@@ -327,13 +327,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;labelEmail.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>11</value>
   </data>
   <data name="buttonAddPerson.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
   </data>
   <data name="buttonAddPerson.Location" type="System.Drawing.Point, System.Drawing">
-    <value>319, 346</value>
+    <value>510, 343</value>
   </data>
   <data name="buttonAddPerson.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 32</value>
@@ -354,6 +354,292 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;buttonAddPerson.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="textBoxProvince.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="textBoxProvince.Location" type="System.Drawing.Point, System.Drawing">
+    <value>294, 201</value>
+  </data>
+  <data name="textBoxProvince.Size" type="System.Drawing.Size, System.Drawing">
+    <value>315, 29</value>
+  </data>
+  <data name="textBoxProvince.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;textBoxProvince.Name" xml:space="preserve">
+    <value>textBoxProvince</value>
+  </data>
+  <data name="&gt;&gt;textBoxProvince.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxProvince.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBoxProvince.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="textBoxCity.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="textBoxCity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>294, 145</value>
+  </data>
+  <data name="textBoxCity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>315, 29</value>
+  </data>
+  <data name="textBoxCity.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;textBoxCity.Name" xml:space="preserve">
+    <value>textBoxCity</value>
+  </data>
+  <data name="&gt;&gt;textBoxCity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxCity.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBoxCity.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="textBoxStreet.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="textBoxStreet.Location" type="System.Drawing.Point, System.Drawing">
+    <value>294, 89</value>
+  </data>
+  <data name="textBoxStreet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>315, 29</value>
+  </data>
+  <data name="textBoxStreet.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;textBoxStreet.Name" xml:space="preserve">
+    <value>textBoxStreet</value>
+  </data>
+  <data name="&gt;&gt;textBoxStreet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxStreet.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBoxStreet.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="textBoxZipcode.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="textBoxZipcode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>294, 33</value>
+  </data>
+  <data name="textBoxZipcode.PlaceholderText" xml:space="preserve">
+    <value>postcode</value>
+  </data>
+  <data name="textBoxZipcode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 29</value>
+  </data>
+  <data name="textBoxZipcode.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;textBoxZipcode.Name" xml:space="preserve">
+    <value>textBoxZipcode</value>
+  </data>
+  <data name="&gt;&gt;textBoxZipcode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxZipcode.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBoxZipcode.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="textBoxNumber.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="textBoxNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>405, 33</value>
+  </data>
+  <data name="textBoxNumber.PlaceholderText" xml:space="preserve">
+    <value>huisnummer</value>
+  </data>
+  <data name="textBoxNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 29</value>
+  </data>
+  <data name="textBoxNumber.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;textBoxNumber.Name" xml:space="preserve">
+    <value>textBoxNumber</value>
+  </data>
+  <data name="&gt;&gt;textBoxNumber.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxNumber.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBoxNumber.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt, style=Bold</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>294, 65</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 21</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Straat :</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt, style=Bold</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>294, 121</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 21</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Stad :</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt, style=Bold</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>294, 177</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 21</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Provincie :</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="textBoxLongitude.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="textBoxLongitude.Location" type="System.Drawing.Point, System.Drawing">
+    <value>294, 236</value>
+  </data>
+  <data name="textBoxLongitude.PlaceholderText" xml:space="preserve">
+    <value>longitude</value>
+  </data>
+  <data name="textBoxLongitude.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 29</value>
+  </data>
+  <data name="textBoxLongitude.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="textBoxLongitude.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;textBoxLongitude.Name" xml:space="preserve">
+    <value>textBoxLongitude</value>
+  </data>
+  <data name="&gt;&gt;textBoxLongitude.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxLongitude.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBoxLongitude.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="textBoxLatitude.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="textBoxLatitude.Location" type="System.Drawing.Point, System.Drawing">
+    <value>405, 236</value>
+  </data>
+  <data name="textBoxLatitude.PlaceholderText" xml:space="preserve">
+    <value>latitude</value>
+  </data>
+  <data name="textBoxLatitude.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 29</value>
+  </data>
+  <data name="textBoxLatitude.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="textBoxLatitude.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;textBoxLatitude.Name" xml:space="preserve">
+    <value>textBoxLatitude</value>
+  </data>
+  <data name="&gt;&gt;textBoxLatitude.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxLatitude.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBoxLatitude.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -363,10 +649,10 @@
     <value>7, 15</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>430, 390</value>
+    <value>624, 387</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Form2</value>
+    <value>AddPersonForm</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>AddPersonForm</value>

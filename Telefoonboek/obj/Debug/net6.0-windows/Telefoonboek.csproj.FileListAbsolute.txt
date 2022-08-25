@@ -17,3 +17,7 @@ D:\Documents\Projects\TelefoonboekForms\Telefoonboek\Telefoonboek\obj\Debug\net6
 D:\Documents\Projects\TelefoonboekForms\Telefoonboek\Telefoonboek\obj\Debug\net6.0-windows\Telefoonboek.AddPersonForm.resources
 D:\Documents\Projects\TelefoonboekForms\Telefoonboek\Telefoonboek\obj\Debug\net6.0-windows\Telefoonboek.PersonsListForm.resources
 D:\Documents\Projects\TelefoonboekForms\Telefoonboek\Telefoonboek\obj\Debug\net6.0-windows\Telefoonboek.EditPersonForm.resources
+D:\Documents\Projects\TelefoonboekForms\Telefoonboek\Telefoonboek\bin\Debug\net6.0-windows\System.Net.Http.Formatting.dll
+D:\Documents\Projects\TelefoonboekForms\Telefoonboek\Telefoonboek\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+D:\Documents\Projects\TelefoonboekForms\Telefoonboek\Telefoonboek\bin\Debug\net6.0-windows\Newtonsoft.Json.Bson.dll
+D:\Documents\Projects\TelefoonboekForms\Telefoonboek\Telefoonboek\obj\Debug\net6.0-windows\Telefoonboek.csproj.CopyComplete

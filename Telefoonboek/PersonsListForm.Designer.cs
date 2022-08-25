@@ -159,7 +159,7 @@
             this.Controls.Add(this.addPersonBtn);
             this.Controls.Add(this.showNamesBtn);
             this.Name = "PersonsListForm";
-            this.Text = "Form1";
+            this.Text = "PersonsListForm";
             this.Load += new System.EventHandler(this.PersonsListForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -40,6 +40,16 @@
             this.labelPhoneNumber = new System.Windows.Forms.Label();
             this.labelEmail = new System.Windows.Forms.Label();
             this.buttonAddPerson = new System.Windows.Forms.Button();
+            this.textBoxProvince = new System.Windows.Forms.TextBox();
+            this.textBoxCity = new System.Windows.Forms.TextBox();
+            this.textBoxStreet = new System.Windows.Forms.TextBox();
+            this.textBoxZipcode = new System.Windows.Forms.TextBox();
+            this.textBoxNumber = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBoxLongitude = new System.Windows.Forms.TextBox();
+            this.textBoxLatitude = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBoxFirstName
@@ -99,10 +109,75 @@
             this.buttonAddPerson.UseVisualStyleBackColor = true;
             this.buttonAddPerson.Click += new System.EventHandler(this.buttonAddPerson_Click);
             // 
+            // textBoxProvince
+            // 
+            resources.ApplyResources(this.textBoxProvince, "textBoxProvince");
+            this.textBoxProvince.Name = "textBoxProvince";
+            this.textBoxProvince.ReadOnly = true;
+            // 
+            // textBoxCity
+            // 
+            resources.ApplyResources(this.textBoxCity, "textBoxCity");
+            this.textBoxCity.Name = "textBoxCity";
+            this.textBoxCity.ReadOnly = true;
+            // 
+            // textBoxStreet
+            // 
+            resources.ApplyResources(this.textBoxStreet, "textBoxStreet");
+            this.textBoxStreet.Name = "textBoxStreet";
+            this.textBoxStreet.ReadOnly = true;
+            // 
+            // textBoxZipcode
+            // 
+            resources.ApplyResources(this.textBoxZipcode, "textBoxZipcode");
+            this.textBoxZipcode.Name = "textBoxZipcode";
+            this.textBoxZipcode.TextChanged += new System.EventHandler(this.TextBoxGetAddres_TextChanged);
+            // 
+            // textBoxNumber
+            // 
+            resources.ApplyResources(this.textBoxNumber, "textBoxNumber");
+            this.textBoxNumber.Name = "textBoxNumber";
+            this.textBoxNumber.TextChanged += new System.EventHandler(this.TextBoxGetAddres_TextChanged);
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
+            // 
+            // textBoxLongitude
+            // 
+            resources.ApplyResources(this.textBoxLongitude, "textBoxLongitude");
+            this.textBoxLongitude.Name = "textBoxLongitude";
+            // 
+            // textBoxLatitude
+            // 
+            resources.ApplyResources(this.textBoxLatitude, "textBoxLatitude");
+            this.textBoxLatitude.Name = "textBoxLatitude";
+            // 
             // AddPersonForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.textBoxLatitude);
+            this.Controls.Add(this.textBoxLongitude);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.textBoxNumber);
+            this.Controls.Add(this.textBoxZipcode);
+            this.Controls.Add(this.textBoxStreet);
+            this.Controls.Add(this.textBoxCity);
+            this.Controls.Add(this.textBoxProvince);
             this.Controls.Add(this.buttonAddPerson);
             this.Controls.Add(this.labelEmail);
             this.Controls.Add(this.labelPhoneNumber);
@@ -135,5 +210,16 @@
         private Label labelPhoneNumber;
         private Label labelEmail;
         private Button buttonAddPerson;
+        private Button button1;
+        private TextBox textBoxProvince;
+        private TextBox textBoxCity;
+        private TextBox textBoxStreet;
+        private TextBox textBoxZipcode;
+        private TextBox textBoxNumber;
+        private Label label2;
+        private Label label3;
+        private Label label4;
+        private TextBox textBoxLongitude;
+        private TextBox textBoxLatitude;
     }
 }
